@@ -1,0 +1,78 @@
+section#contact ul
+{
+    overflow: visible;
+    width: 100%;
+    margin: 1em auto;
+    padding: 1em auto;
+}
+
+section#contact ul li
+{
+    position: relative;
+    width: 18%;
+    float: left;
+    margin: 0 1%;
+    padding: 1%;
+}
+
+section#contact ul li:hover a img
+{
+    background: white;
+    box-shadow: 0 0 8px 8px white;
+    border-radius: 50%;
+}
+
+/*
+section#contact ul li:hover:before
+{
+    content:"";
+    position: absolute;
+    top: -30%;
+    left: -50%;
+    right: -50%;
+    bottom: 10%;
+    background-color: darkgrey;
+    border-radius: 50%;
+}
+*/
+section#contact p
+{
+    text-align: center
+}
+
+section#contact p a
+{
+    font:
+}
+
+section#contact ul li a
+{
+    text-decoration: none;
+    display: block;
+    position: relative;
+    height: 10vh;
+}
+
+section#contact ul li a img
+{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    height: 35%;
+}
+
+section#contact ul li a span
+{
+    text-align: center;
+    display: block;
+    line-height: 3;
+    font-weight: 400;
+    color: #000000;
+    font-size: 0.7em;
+}
+
+section#contact
+{
+    background: #f8e5b8;
+    border-bottom: 4em #232323 solid;
+}

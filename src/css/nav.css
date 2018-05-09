@@ -1,0 +1,124 @@
+nav
+{
+    height: 3em;
+    line-height: 2.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 600;
+    display: inline-block;
+    width: 100%;
+    background: rgba(0,0,0,0.55);
+    border: 0;
+    font-family: 'Lato', 'Helvetica', arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    /* for Chrome and Safari */
+    -webkit-transform: translateZ(0);
+}
+
+nav.nav_closed
+{
+    overflow: hidden;
+}
+
+nav.nav_closed ul#navlist
+{
+    display: none;
+}
+
+nav.nav_open
+{
+    overflow: visible;
+}
+
+nav.nav_open a#menu
+{
+    background: rgba(255,255,255,0.4);
+/*    color: #333333;*/
+    color: #1e90ff;
+    background: rgba(255,255,255,0.7) url('../images/hamburger_hover.png');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 1.6em 1.8em;
+}
+
+ul#mainnav
+{
+    display: inline-block;
+    width: 100%;
+    background: rgba(0,0,0,0.55);
+    border: 0;
+    font-family: 'Lato', 'Helvetica', arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 4em;
+}
+
+nav.nav_open ul#navlist, ul#mainnav
+{
+    display: block;
+/*    background: rgba(0,0,0,0.85);*/
+}
+
+nav.nav_open ul#navlist li, ul#mainnav li
+{
+    border-top: 3px solid rgba(255,255,255,0.5);
+    background: rgba(0,0,255,0.65);
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+}
+
+nav.nav_open ul#navlist li a, ul#mainnav li a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav.nav_open ul#navlist li a:hover, ul#mainnav li a:hover
+{
+    background: rgba(255,255,0,0.65);
+}
+
+/*--- Menu button Rules ---*/
+a#menu
+{
+    float: right;
+    border: 1px solid #cccccc;
+    color: #ffe3cd;
+    width: 5.5em;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-bottom: 6px;
+    padding-left: 1.8em;
+    font-weight: 600;
+    text-decoration: none;
+    background: url('../images/hamburger.png');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 1.6em 1.8em;
+
+}
+
+a#menu:hover
+{
+    background: rgba(255,255,255,0.4);
+    color: #1e90ff;
+    font-weight: 600;
+
+    background: url('../images/hamburger_hover.png');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 1.6em 1.8em;
+}
+
+/*--- Menu nav list ----*/
+ul#navlist
+{
+    clear: right;
+    list-style: none;
+    font-weight: 300;
+}

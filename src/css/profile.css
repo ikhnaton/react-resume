@@ -1,0 +1,29 @@
+section#profile
+{
+    position: relative;
+}
+
+section#profile:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background-image:  url('../images/cogs-blueprint-2048x1556.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.15;
+}
+
+section#profile div
+{
+    margin-top: 0;
+}
+
+section#profile article p
+{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
