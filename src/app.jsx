@@ -4,17 +4,8 @@ import Nav from './components/nav.jsx';
 import Skills from './components/skills.jsx';
 import Education from './components/education/education.jsx';
 import Experience from './components/experience.jsx';
+import Social from './components/social.jsx';
 import { resume } from './resume.js';
-//import { BrowserRouter, Link, Route } from 'react-router-dom';
-//import { Provider, connect } from 'react-redux';
-//import Messages from 'react-error';
-//import * as messageActions from 'react-error/actions';
-//import store from './store';
-//import { Header, Button, Grid, Image, Menu, Icon } from 'semantic-ui-react';
-//import { Home, Search, Edit, Save, Download, Layout, Email } from './components/home/Home.jsx';
-//import { Me } from './components/me/me.jsx';
-//import { getUserAction } from './actions/user';
-//import "./main.less";
 
 class App extends React.Component
 {
@@ -51,8 +42,8 @@ class App extends React.Component
 				</nav>
 				<section id="page-header" style={isIOS === true ? {} : { backgroundAttachment: "fixed" } }>
 					<header>
-						<h1>Niall Cargill</h1>
-						<h2>Developer Extraordinaire</h2>
+						<h1>{resume.personal.name}</h1>
+						<h2>{resume.personal.tagline}</h2>
 					</header>
 				</section>
 				<section id="profile" className="page-content">
@@ -62,7 +53,7 @@ class App extends React.Component
 							<h2>who am i</h2>
 						</header>
 						<article>
-							<p>I have eighteen years of professional experience in Architecture, Analysis, Design, and Development.  I have excellent communication skills, mentoring ability, and a strong work ethic.  I am a solid and proven team player and a believer in continued self-education.</p>
+							<p>{resume.personal.profile}</p>
 						</article>
 					</div>
 				</section>
@@ -137,24 +128,8 @@ class App extends React.Component
 							<h2>get in touch with me</h2>
 						</header>
 						<article>
-							<p><a href="" id="reach">my.email@gmail.com</a></p>
-							<ul>
-								<li>
-									<a href="#" target="_blank" title="Follow my videos on YouTube (new window)"><img src="images/icons/youtube-icon.svg" alt="YouTube"/><span >YouTube</span></a>
-								</li>
-								<li>
-									<a href="#" target="_blank" title="Connect with me on Facebook (new window)"><img src="images/icons/facebook-icon.svg" alt="Facebook"/><span>Facebook</span></a>
-								</li>
-								<li>
-									<a href="#" target="_blank" title="Follow my tweets on Twitter (new window)"><img src="images/icons/twitter.svg" alt="Twitter"/><span>Twitter</span></a>
-								</li>
-								<li>
-									<a href="#" target="_blank" title="Connect with me on LinkedIn (new window)"><img src="images/icons/linkedin-icon.svg" alt="LinkedIn"/><span>LinkedIn</span></a>
-								</li>
-								<li>
-									<a href="#" target="_blank" title="Connect with me on Google+ (new window)"><img src="images/icons/google-plus.svg" alt="Google+" /><span>Google+</span></a>
-								</li>
-							</ul>
+							<p><a href={`mailto:${resume.personal.email}`} id="reach">{resume.personal.email}</a></p>
+							<Social profile={resume.personal} />
 						</article>
 					</div>
 				</section>

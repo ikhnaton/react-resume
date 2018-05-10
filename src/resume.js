@@ -1,4 +1,15 @@
 export const resume = {
+	personal: {
+		profile: "I have twenty years of professional experience in Architecture, Analysis, Design, and Development.  I have excellent communication skills, mentoring ability, and a strong work ethic.  I am a solid and proven team player and a believer in continued self-education.",
+		facebook: "",
+		linkedIn: "ikhnatonx",
+		youtube: "ikhnatonx",
+		twitter: "ikhnaton",
+		google: "",
+		email: "ikhnaton@gmail.com",
+		name: "Niall Cargill",
+		tagline: "Developer Extraordinaire"
+	},
 	education: [
 		{
 			type: "school",
