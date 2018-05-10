@@ -21,7 +21,7 @@ const Social = (props = {}) =>
 
 	const linkedIn = valid(props.profile.linkedIn)
 		? <li>
-			<a href={`www.linkedin.com/in/${props.profile.linkedIn}`} target="_blank" title="Connect with me on LinkedIn (new window)"><img src="images/icons/linkedin-icon.svg" alt="LinkedIn"/><span>LinkedIn</span></a>
+			<a href={`https://www.linkedin.com/in/${props.profile.linkedIn}`} target="_blank" title="Connect with me on LinkedIn (new window)"><img src="images/icons/linkedin-icon.svg" alt="LinkedIn"/><span>LinkedIn</span></a>
 		</li> : null;
 
 	const google = valid(props.profile.google)

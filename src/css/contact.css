@@ -4,13 +4,14 @@ section#contact ul
     width: 100%;
     margin: 1em auto;
     padding: 1em auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
 }
 
 section#contact ul li
 {
-    position: relative;
-    width: 18%;
-    float: left;
+	flex: 1 1 18%;
     margin: 0 1%;
     padding: 1%;
 }
