@@ -1,4 +1,4 @@
-section#skills div
+section#skills > div
 {
     width: 100%;
     margin:0 auto 3em auto;
@@ -98,6 +98,11 @@ section#skills ul li:hover
     background: #fafaad;
 }
 
+section#skills article
+{
+	clear: both;
+}
+
 @media screen and (min-width: 1084px)
 {
     section#skills div
@@ -153,4 +158,27 @@ section#skills ul li:hover
     {
         clear: none;
     }
+}
+
+section#skills .badges
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:  space-evenly;
+}
+
+section#skills .badges > div
+{
+	flex: 0 0 23%;
+	position: relative;
+	text-align: center;
+	margin: 1%;
+	box-sizing: border-box;
+}
+
+section#skills .badges > div img
+{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 }

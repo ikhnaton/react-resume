@@ -4,6 +4,7 @@ import Nav from './components/nav.jsx';
 import Skills from './components/skills.jsx';
 import Education from './components/education/education.jsx';
 import Experience from './components/experience.jsx';
+import Badges from './components/badges.jsx';
 import Social from './components/social.jsx';
 import { resume } from './resume.js';
 
@@ -66,6 +67,8 @@ class App extends React.Component
 						<article>
 							<Skills list={resume.skills} />
 						</article>
+						<br/>
+						<Badges list={resume.badges} />
 					</div>
 				</section>
 				<section id="education" className="page-content">
